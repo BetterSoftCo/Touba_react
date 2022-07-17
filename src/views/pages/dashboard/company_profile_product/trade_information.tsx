@@ -1,29 +1,9 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
 import {
-  ComponentColors,
-  ComponentColorSelect,
-  ComponentFieldsetPrice,
   ComponentProductDetail,
   ComponentRadioCircle,
   ComponentRadioSquare,
-  ComponentTextArea,
-  TextIconVerticalDashboard,
 } from "../../../components/components";
 import { InputTextLabel } from "../../../components/input_text_label";
-import {
-  IconCalling,
-  IconDanger,
-  IconShop,
-  ImageJuicer,
-  ImageManFlying,
-  ImageManWithBox,
-  ImageTest,
-} from "../../../../assets";
-import Select_component_double from "../../../components/select_component_double";
-import ButtonAdd from "../../../components/button_add";
-import ComponentStorage from "../../../components/component_storage";
-import { Divider } from "../../../components/divider";
 import { NavLink } from "react-router-dom";
 import TradeInformationController from '../../../controllers/trade_information_controller';
 
@@ -179,7 +159,6 @@ export default class TradeInformation extends TradeInformationController {
                   </div>
                 )}
               </div>
-  
               <div>
                 <button className="btn-cancle p-3">Save and Quit</button>
               </div>

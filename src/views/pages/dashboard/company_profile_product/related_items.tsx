@@ -1,20 +1,9 @@
-import React, { Component } from 'react'
-import CongratulationBanner from "../../../components/congratulation_banner";
 import {
   CardLike,
-  ComponentColors,
-  ComponentColorSelect,
-  ComponentFieldsetPrice,
   ComponentProductDetail,
-  ComponentRadioCircle,
-  ComponentRadioSquare,
-  ComponentTextArea,
-  TextIconVerticalDashboard,
 } from "../../../components/components";
 import { InputTextLabel } from "../../../components/input_text_label";
 import image_test from "../../../../assets/images/image-test.png";
-
-
 import ButtonAdd from "../../../components/button_add";
 import { Divider } from "../../../components/divider";
 import { ModalCompany } from "../../../components/modal_company";
