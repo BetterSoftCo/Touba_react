@@ -24,16 +24,24 @@ export class RegisterControll extends Component<IProps, IState> {
     code: 0,
   };
   userRegister = new UserDataSource("https://api.sinamn75.com/api/"); //list
-  registerUser=()=>{
-    const userInformation={
-        userName:    this.state.firstName + this.state.lastName,
-        email:       this.state.email,
-        phoneNumber: this.state.phone,
-        password:    this.state.password,
-        sendSMS:    false
-    }
-    await this.userRegister.userRe()
-  }
+  registerUser = () => {
+    const userInformation = {
+      userName: this.state.firstName + this.state.lastName,
+      email: this.state.email,
+      phoneNumber: this.state.phone,
+      password: this.state.password,
+      sendSMS: false,
+    };
+    this.userRegister.userRegister(
+      userInformation,
+      (r) => {
+        console.log(r);
+      },
+      (e) => {
+        console.log(e);
+      }
+    );
+  };
 
   getPhoneNumber = (value: string) => {
     this.setState({ phone: value });

@@ -98,7 +98,7 @@ class Register extends RegisterControll {
             </Link>
           </div>
           <div className="register-modal-button">
-            <Button title="REGISTER" />
+            <Button onClick={this.registerUser} title="REGISTER" />
           </div>
           <div className="register-modal-divider">
             <div className="register-modal-divider-line"></div>
