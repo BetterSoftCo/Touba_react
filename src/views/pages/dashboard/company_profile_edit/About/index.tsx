@@ -36,19 +36,17 @@ class SectionAbout extends CompanyProfileEditController {
                     />
                 </div>
                 <div className="body-content-items">
-                    {activeTab === 1 ? (
+                    {activeTab === 1 ?
                         <Description />
-                    ) : (
-                        activeTab === 2 ? (
+                        :
+                        activeTab === 2 ?
                             <Specification />
-                        ) : (
-                            activeTab === 3 ? (
+                            :
+                            activeTab === 3 ?
                                 <Certification />
-                            ) : (
+                                :
                                 <Faq />
-                            )
-                        )
-                    )}
+                    }
                 </div>
             </>
         )
