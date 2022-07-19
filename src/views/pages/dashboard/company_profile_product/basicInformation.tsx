@@ -110,7 +110,7 @@ class BasicInformation extends BasicInformationController {
                       placeholder="Technical Support"
                       title="Product Title"
                       value=""
-                      onChange={() => {}}
+                      onChange={(e) => console.log(e.target.value)}
                       showDropDown={false}
                     />
                   </div>
@@ -142,7 +142,7 @@ class BasicInformation extends BasicInformationController {
                       placeholder="Milk Powder , Food Powders , Food raw materials"
                       title="Keywords"
                       value=""
-                      onChange={() => {}}
+                      onChange={(e) => {console.log(e.target.value)}}
                       showDropDown={false}
                     />
                   </div>

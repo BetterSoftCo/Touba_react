@@ -24,7 +24,6 @@ export function InputTextLabel({ showDropDown, value, onChange, title, placehold
             <input
                 type={type}
                 placeholder={placeholder}
-                value={value}
                 onChange={handleOnChange}
                 className="input-text-label-input"
             />
