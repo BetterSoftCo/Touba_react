@@ -1,6 +1,6 @@
 import FinanceController from "../../../controllers/finance_controller";
-import { ScheduleComponent, ViewsDirective, ViewDirective, Month, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
-// import './cell-template.css';
+// import { ScheduleComponent, ViewsDirective, ViewDirective, Month, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
+// // import './cell-template.css';
 
 export default class IncomePayCalendar extends FinanceController {
     // private getCellContent(date: Date) {
