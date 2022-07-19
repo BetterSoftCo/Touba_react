@@ -34,10 +34,10 @@ export class RegisterControll extends Component<IProps, IState> {
     };
     this.userRegister.userRegister(
       userInformation,
-      (r) => {
+      (r: any) => {
         console.log(r);
       },
-      (e) => {
+      (e: any) => {
         console.log(e);
       }
     );
