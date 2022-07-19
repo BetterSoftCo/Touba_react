@@ -97,6 +97,9 @@ export class FinanceController extends Component<IProps, IState> {
   handleShow = (e: number) => {
     this.setState({ filter: e });
   };
+  getCellContent(date: { getMonth: () => number; getDate: () => number; }) {
+    return '';
+  }
 }
 export default FinanceController;
 
