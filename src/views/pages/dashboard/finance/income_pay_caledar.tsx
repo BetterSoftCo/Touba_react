@@ -12,7 +12,7 @@ export default class IncomePayCalendar extends FinanceController {
     }
     render() {
         return (
-            <div className='schedule-control-section'>
+            <div className='schedule-control-section scheduler'>
                 <div className='col-lg-12 control-section'>
                     <div className='control-wrapper'>
                         <ScheduleComponent cssClass='cell-template' width='100%' height='650px' selectedDate={new Date(2021, 11, 15)} cellTemplate={this.cellTemplate.bind(this)}>

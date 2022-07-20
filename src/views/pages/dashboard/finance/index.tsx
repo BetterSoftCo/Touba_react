@@ -16,6 +16,10 @@ import SoldItems from "./sold_items";
 
 export default class DashboardFinance extends FinanceController {
   render() {
+    const {
+      activeLink,
+      active
+    } = this.state;
     return (
       <div className="finance-page d-flex flex-row align-items-start">
         <div className="content mx-auto">
@@ -30,17 +34,17 @@ export default class DashboardFinance extends FinanceController {
               />
             </div>
             <div className="center-content">
-              {this.state.activeLink === 0
-                ? <Overview/>
-                : this.state.activeLink === 1
-                ? <SoldItems/>
-                : this.state.activeLink === 2
-                ? <PurchasedItems/>
-                : this.state.activeLink === 3
-                ? <RedeemedInvoices/>
-                : this.state.activeLink === 4
-                ? <IncomePayCalendar/>
-                : null}
+              {activeLink === 0
+                ? <Overview />
+                : activeLink === 1
+                  ? <SoldItems />
+                  : activeLink === 2
+                    ? <PurchasedItems />
+                    : activeLink === 3
+                      ? <RedeemedInvoices />
+                      : activeLink === 4
+                        ? <IncomePayCalendar />
+                        : null}
             </div>
           </div>
         </div>
@@ -60,7 +64,7 @@ export default class DashboardFinance extends FinanceController {
                 <div className="col-3 ">
                   <div className="mx-1">
                     <Offcanvas onActive={this.handleActiveTab}>
-                      {this.state.active === 3 ? (
+                      {active === 3 ? (
                         <>
                           <CardGroupChat
                             title={"Group Title"}
@@ -155,7 +159,7 @@ export default class DashboardFinance extends FinanceController {
                         </>
                       ) : (
                         <>
-                          {this.state.active === 2 ? (
+                          {active === 2 ? (
                             <>
                               <ComponentMessage />
                               <ComponentMessage />
