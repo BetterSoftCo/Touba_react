@@ -184,7 +184,7 @@ export default class RelatedItems extends RelatedItemsController {
             </div>
             <div className="d-flex p-4 justify-content-between align-items-center">
               <div className="d-flex align-items-center ">
-                <button className="btn-save-change p-3" onClick={() => this.setState({ active: this.state.active + 1 })}>Next Step</button>
+                <button className="btn-save-change p-3" onClick={() => this.setState({ active: this.state.active + 1 })}>Publish Product</button>
                 {this.state.active > 0 && (
                   <div className="px-2">
                     <button
@@ -199,7 +199,7 @@ export default class RelatedItems extends RelatedItemsController {
               </div>
 
               <div>
-                <button className="btn-cancle p-3">Save and Quit</button>
+                
               </div>
             </div>
           </div>
