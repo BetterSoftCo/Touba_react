@@ -1,31 +1,9 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import OtherDetailController from "../../../controllers/other_detail_controller";
-import CongratulationBanner from "../../../components/congratulation_banner";
-import {
-  ComponentColors,
-  ComponentColorSelect,
-  ComponentFieldsetPrice,
-  ComponentMultiInput,
-  ComponentProductDetail,
-  ComponentRadioSquare,
-  ComponentTextArea,
-  TextIconVerticalDashboard,
-} from "../../../components/components";
-import { InputTextLabel } from "../../../components/input_text_label";
-import {
-  IconCalling,
-  IconDanger,
-  IconShop,
-  ImageJuicer,
-  ImageManFlying,
-  ImageManWithBox,
-  ImageTest,
-} from "../../../../assets";
-import Select_component_double from "../../../components/select_component_double";
 import ButtonAdd from "../../../components/button_add";
-import ComponentStorage from "../../../components/component_storage";
-import { Divider } from "../../../components/divider";
+import { ComponentProductDetail, ComponentMultiInput } from "../../../components/components";
+import CongratulationBanner from "../../../components/congratulation_banner";
+import { InputTextLabel } from "../../../components/input_text_label";
+import OtherDetailController from "../../../controllers/other_detail_controller";
+
 
 export default class OtherDetail extends OtherDetailController {
   render() {
@@ -33,7 +11,7 @@ export default class OtherDetail extends OtherDetailController {
       <div>
         {" "}
         {!this.state.tab ? (
-          <div style={{ width: "960px", height: "670px" }}>
+          <div style={{ width: "100%", height: "670px" }}>
             <CongratulationBanner
               onClick={() => this.setState({ tab: true })}
               activeTab="Other Details"
