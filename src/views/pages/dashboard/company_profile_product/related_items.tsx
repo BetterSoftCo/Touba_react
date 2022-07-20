@@ -5,15 +5,15 @@ import {
 import { InputTextLabel } from "../../../components/input_text_label";
 import image_test from "../../../../assets/images/image-test.png";
 import ButtonAdd from "../../../components/button_add";
-import { Divider } from "../../../components/divider";
 import { ModalCompany } from "../../../components/modal_company";
 import { CardProduct } from "../../../components/card_product";
 import RelatedItemsController from '../../../controllers/related_items_controller';
+import { IconMinesCircle } from "../../../../assets";
 
 export default class RelatedItems extends RelatedItemsController {
   render() {
     return (
-        <div>
+      <div>
         <div>
           <div>
             <ComponentProductDetail />
@@ -21,14 +21,14 @@ export default class RelatedItems extends RelatedItemsController {
           <div className="table-box mt-3 ">
             <div className="row border-bottom d-flex align-items-center ">
               <div className="row d-flex -align-items-center ">
-                <div onClick={() => this.setState({active:0})} className="col-4 text-center ">
+                <div onClick={() => this.setState({ active: 0 })} className="col-4 text-center ">
                   <div
                     className={`item-nav py-4 ${this.state.active == 0 && "item-active"} `}
                   >
                     Related Products{" "}
                   </div>
                 </div>
-                <div onClick={() => this.setState({active:1})} className="col-4 text-center ">
+                <div onClick={() => this.setState({ active: 1 })} className="col-4 text-center ">
                   <div
                     className={`item-nav py-4 ${this.state.active == 1 && "item-active"} `}
                   >
@@ -50,23 +50,23 @@ export default class RelatedItems extends RelatedItemsController {
                     <CardLike />
                   </div>
                   <div className="p-2 mt-3">
-                    <ButtonAdd onClick={() =>  this.setState({shoModalProduct:true})} />
+                    <ButtonAdd onClick={() => this.setState({ shoModalProduct: true })} />
                   </div>
                   <div>
                     {this.state.shoModalProduct && (
                       <ModalCompany
-                        onClose={() =>  this.setState({shoModalProduct:false})}
-                        onSave={() =>  this.setState({shoModalProduct:false})}
+                        onClose={() => this.setState({ shoModalProduct: false })}
+                        onSave={() => this.setState({ shoModalProduct: false })}
                       >
                         <div className="p-2">
                           <div className="pt-3 col-5 border-bottom">
-                          <div className="col-5 mb-3 ">
+                            <div className="col-5 mb-3 ">
                               <InputTextLabel
                                 type="select"
                                 placeholder="Name of product"
                                 title="Search Products"
                                 value=""
-                                onChange={() => {}}
+                                onChange={() => { }}
                                 showDropDown={true}
                               />
                             </div>
@@ -99,6 +99,7 @@ export default class RelatedItems extends RelatedItemsController {
                         description={"Pomegranate Juice Pet Bottle, "}
                         chart={this.TEST}
                         amount={5}
+                        icon={IconMinesCircle}
                       />{" "}
                     </div>
                     <div className="col-6 p-2">
@@ -108,15 +109,16 @@ export default class RelatedItems extends RelatedItemsController {
                         description={"Pomegranate Juice Pet Bottle, "}
                         chart={this.TEST}
                         amount={5}
+                        icon={IconMinesCircle}
                       />{" "}
                     </div>
                     <div className="p-2 mt-3">
-                      <ButtonAdd onClick={() =>  this.setState({shoModalProduct:true})} />
+                      <ButtonAdd onClick={() => this.setState({ shoModalProduct: true })} />
                     </div>
                     {this.state.shoModalProduct && (
                       <ModalCompany
-                        onClose={() => this.setState({shoModalProduct:false})}
-                        onSave={() =>  this.setState({shoModalProduct:false})}
+                        onClose={() => this.setState({ shoModalProduct: false })}
+                        onSave={() => this.setState({ shoModalProduct: false })}
                       >
                         <div className="p-2">
                           <div className="pt-3  border-bottom">
@@ -126,7 +128,7 @@ export default class RelatedItems extends RelatedItemsController {
                                 placeholder="Name of excess capacity"
                                 title="Search Excess Capacity"
                                 value=""
-                                onChange={() => {}}
+                                onChange={() => { }}
                                 showDropDown={true}
                               />
                             </div>
@@ -182,11 +184,11 @@ export default class RelatedItems extends RelatedItemsController {
             </div>
             <div className="d-flex p-4 justify-content-between align-items-center">
               <div className="d-flex align-items-center ">
-                <button className="btn-save-change p-3" onClick={() => this.setState({active:this.state.active+1})}>Next Step</button>
+                <button className="btn-save-change p-3" onClick={() => this.setState({ active: this.state.active + 1 })}>Next Step</button>
                 {this.state.active > 0 && (
                   <div className="px-2">
                     <button
-                      onClick={() => this.setState({active:this.state.active-1})}
+                      onClick={() => this.setState({ active: this.state.active - 1 })}
                       className="btn-outline  p-3"
                     >
                       {" "}
@@ -195,13 +197,14 @@ export default class RelatedItems extends RelatedItemsController {
                   </div>
                 )}
               </div>
-  
+
               <div>
                 <button className="btn-cancle p-3">Save and Quit</button>
               </div>
             </div>
           </div>
         </div>
-      </div>    )
+      </div>
+    )
   }
 }

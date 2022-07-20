@@ -9,6 +9,7 @@ interface Props {
     description: string;
     amount: number;
     chart: CHART[];
+    icon?: string;
 }
 
 export function CardProduct({
@@ -16,7 +17,8 @@ export function CardProduct({
     status,
     description,
     amount,
-    chart
+    chart,
+    icon,
 }:Props): ReactElement {
     return (
         <div className="card-product border-optional">
@@ -28,7 +30,7 @@ export function CardProduct({
                     <h6 className="card-product-content-header-text">
                         {status}
                     </h6>
-                    <img src={IconHeart} className="card-product-content-header-icon"/>
+                    <img src={icon === undefined ? IconHeart : icon} className="card-product-content-header-icon"/>
                 </div>
                 <div className="card-product-content-title">
                     <h2 className="card-product-content-title-text">

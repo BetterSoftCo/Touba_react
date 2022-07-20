@@ -190,3 +190,4 @@ export { default as ImageChat} from './images/image-chat.png';
 export { default as ImageWorld} from './images/image-world.png';
 export { default as ToubaLogo1} from './images/ToubaLogo1.png';
 export { default as ToubaLogo2} from './images/ToubaLogo2.svg';
+export { default as IconMinesCircle} from './icons/icon-mines-circle.svg';
