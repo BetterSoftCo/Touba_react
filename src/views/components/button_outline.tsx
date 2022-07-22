@@ -13,7 +13,6 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function ButtonOutline({ onClick, title }: Props): ReactElement {
 
     const handleOnClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
-        event.stopPropagation();
         onClick?.(event);
     }, [onClick]);
 
