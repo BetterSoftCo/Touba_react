@@ -15,8 +15,6 @@ interface IState {
 
 export class HomeController extends Component<IProps, IState> {
 
-    
-
     state = {
         more: false,
         selectText: "",
