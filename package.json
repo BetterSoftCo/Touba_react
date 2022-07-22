@@ -27,10 +27,12 @@
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.3.0",
     "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.7",
     "sass": "^1.53.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.2.6",
-    "utilities_js": "git://github.com/SinaMN75/Utilities_js.git"  },
+    "utilities_js": "git://github.com/SinaMN75/Utilities_js.git"
+  },
   "devDependencies": {
     "@types/node": "^17.0.45",
     "@types/react-calendar": "^3.5.1",

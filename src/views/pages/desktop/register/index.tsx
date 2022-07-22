@@ -6,6 +6,8 @@ import { ComponentRadioSquare } from "../../../components/components";
 import { InputTextLabel } from "../../../components/input_text_label";
 import { InputTextPhoneNumber } from "../../../components/input_text_phonenumber";
 import RegisterControll from "../../../controllers/register_controller";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Register extends RegisterControll {
   render() {
@@ -118,6 +120,8 @@ class Register extends RegisterControll {
             </button>
           </div>
         </div>
+        <ToastContainer />
+
       </div>
     );
   }

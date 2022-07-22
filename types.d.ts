@@ -10,3 +10,15 @@ declare module "*.jpg" {
     const src: string;
     export default jpg;
 }
+
+declare global {
+  namespace Express {
+    interface Request {
+      user: any;
+      
+    }
+
+  }
+  export default user;
+
+}
