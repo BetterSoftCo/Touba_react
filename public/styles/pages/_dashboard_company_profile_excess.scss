@@ -1,4 +1,16 @@
 .company-profile-excess-page {
+    .input-text-label {
+        .input-text-label-input {
+            border-color: $gray !important;
+        }
+    }
+    .text-red {
+        .input-text-label-input::placeholder {
+            @include FontStyle(16px, 500, $red);
+            opacity: 1;
+            margin: 0;
+        } 
+    }
     .content {
         padding: 0 30px;
         border-top: 1px solid #d6d6d6;

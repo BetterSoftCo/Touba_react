@@ -30,11 +30,10 @@ export default class OtherDetail extends OtherDetailController {
                     className="col-3 text-center "
                   >
                     <div
-                      className={`item-nav py-4 ${
-                        this.state.active == 0 && "item-active"
-                      } `}
+                      className={`item-nav py-4 ${this.state.active == 0 && "item-active"
+                        } `}
                     >
-                      Packaging & Shipping
+                      PACHAGING & SHIPPING
                     </div>
                   </div>
                   <div
@@ -42,11 +41,10 @@ export default class OtherDetail extends OtherDetailController {
                     className="col-2 text-center "
                   >
                     <div
-                      className={`item-nav py-4 ${
-                        this.state.active == 1 && "item-active"
-                      } `}
+                      className={`item-nav py-4 ${this.state.active == 1 && "item-active"
+                        } `}
                     >
-                      Certifications
+                      CERTIFICATIONS
                     </div>
                   </div>
                   <div
@@ -54,9 +52,8 @@ export default class OtherDetail extends OtherDetailController {
                     className="col-2 text-center "
                   >
                     <div
-                      className={`item-nav py-4 ${
-                        this.state.active == 2 && "item-active"
-                      } `}
+                      className={`item-nav py-4 ${this.state.active == 2 && "item-active"
+                        } `}
                     >
                       FAQ{" "}
                     </div>
@@ -66,11 +63,10 @@ export default class OtherDetail extends OtherDetailController {
                     className="col-2 text-center "
                   >
                     <div
-                      className={`item-nav py-4 ${
-                        this.state.active == 3 && "item-active"
-                      } `}
+                      className={`item-nav py-4 ${this.state.active == 3 && "item-active"
+                        } `}
                     >
-                      Other option{" "}
+                      OTHER OPTION{" "}
                     </div>
                   </div>
                   <div
@@ -78,11 +74,10 @@ export default class OtherDetail extends OtherDetailController {
                     className="col-2 text-center "
                   >
                     <div
-                      className={`item-nav py-4 ${
-                        this.state.active == 4 && "item-active"
-                      }`}
+                      className={`item-nav py-4 ${this.state.active == 4 && "item-active"
+                        }`}
                     >
-                      Other option
+                      OTHER OPTION
                     </div>
                   </div>
                 </div>
@@ -93,22 +88,22 @@ export default class OtherDetail extends OtherDetailController {
                     {" "}
                     <div className="">
                       <ComponentMultiInput
-                        lableOne="Feature Title:"
-                        lableTwo="Feature Details:"
-                        placeholderOne="Weight"
-                        placeholderTwo="2800 KG"
+                        lableOne="Filed Name:"
+                        lableTwo="Amount:"
+                        placeholderOne="Packaging Type"
+                        placeholderTwo="Box"
                       />{" "}
                     </div>
                     <div className="mt-4">
                       <ComponentMultiInput
-                        lableOne="Feature Title:"
-                        lableTwo="Feature Details:"
-                        placeholderOne="Weight"
-                        placeholderTwo="2800 KG"
+                        lableOne="Filed Name:"
+                        lableTwo="Amount:"
+                        placeholderOne="Port"
+                        placeholderTwo="Bandar Abbas"
                       />{" "}
                     </div>
-                    <div className="mt-2">
-                      <ButtonAdd onClick={() => {}} />
+                    <div className="mt-3 mb-5">
+                      <ButtonAdd onClick={() => { }} />
                     </div>{" "}
                   </div>
                 )}
@@ -121,7 +116,7 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="Certificate Name"
                           title="Certificate:"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
@@ -131,7 +126,7 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="123456"
                           title="Code::"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
@@ -147,7 +142,7 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="Type Question Here"
                           title="Question"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
@@ -157,7 +152,7 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="Type Answer"
                           title="Answer"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
@@ -168,7 +163,7 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="Type Question Here"
                           title="Question"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
@@ -178,13 +173,13 @@ export default class OtherDetail extends OtherDetailController {
                           placeholder="Type Answer"
                           title="Answer"
                           value=""
-                          onChange={() => {}}
+                          onChange={() => { }}
                           showDropDown={true}
                         />
                       </div>
                       <div className="border-bottom-dashed mt-3"></div>
                       <div className="mt-1">
-                        <ButtonAdd onClick={() => {}} />
+                        <ButtonAdd onClick={() => { }} />
                       </div>
                     </div>
                   </div>

@@ -68,7 +68,7 @@ const BasicInformationExcess = ({ onClick }: IProps) => {
           </div>
         </div>
         <div className="row d-flex align-items-center">
-          <div className="col-6 p-2">
+          <div className="col-6 p-2 text-red">
             <InputTextLabel
               type="text"
               placeholder="Milk Powder , Food Powders , Food raw materials"
@@ -292,29 +292,29 @@ const BasicInformationExcess = ({ onClick }: IProps) => {
       <div className="table-box ">
         <div className="row border-bottom d-flex align-items-center ">
           <div className="row d-flex align-items-center ">
-            <div onClick={() => setActive(0)} className="col-2 text-center ">
+            <div onClick={() => setActive(0)} className="col-2 text-center mx-4">
               <div className={`item-nav py-4 ${active == 0 && "item-active"} `}>
-                Basic Information
+                BASIC INFORMATION
               </div>
             </div>
             <div onClick={() => setActive(1)} className="col-2 text-center ">
               <div className={`item-nav py-4 ${active == 1 && "item-active"} `}>
-                Price & Delivery
+                PRICE & DELIVERY
               </div>
             </div>
             <div onClick={() => setActive(2)} className="col-2 text-center ">
               <div className={`item-nav py-4 ${active == 2 && "item-active"} `}>
-                Capacity Detals
+                CAPACITY DETALS
               </div>
             </div>
             <div onClick={() => setActive(3)} className="col-2 text-center ">
               <div className={`item-nav py-4 ${active == 3 && "item-active"} `}>
-                Descriptions
+                SPECIFICATIONS
               </div>
             </div>
-            <div onClick={() => setActive(3)} className="col-2 text-center ">
+            <div onClick={() => setActive(4)} className="col-2 text-center ">
               <div className={`item-nav py-4 ${active == 4 && "item-active"}`}>
-                Specifications
+                DESCRIPTIONS
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@ const BasicInformationExcess = ({ onClick }: IProps) => {
           {active == 0 && basicInformmation()}
           {active == 1 && priceDelivery()}
           {active == 2 && capacityDetail()}
-          {active == 3 && (
+          {active == 4 && (
             <div className="px-3">
               <div className="">
                 <ComponentTextArea />
@@ -336,8 +336,8 @@ const BasicInformationExcess = ({ onClick }: IProps) => {
               </div>
             </div>
           )}
-          {active == 4 && (
-            <div>
+          {active == 3 && (
+            <div className="mx-5">
               <TextIconVerticalDashboard
                 icon={IconDanger}
                 title={"Hint text about the feature"}

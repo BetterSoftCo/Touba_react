@@ -1730,6 +1730,7 @@ a {
 }
 
 .card-product-content-header-icon {
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -19440,6 +19441,58 @@ a {
 
 .report-statistics-details-keyword-button .button-outline {
   margin: 8px;
+}
+
+.company-profile-excess-page .input-text-label .input-text-label-input {
+  border-color: #d6d6d6 !important;
+}
+
+.company-profile-excess-page .text-red .input-text-label-input::-webkit-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #FC4A56 !important;
+  opacity: 1;
+  margin: 0;
+}
+
+.company-profile-excess-page .text-red .input-text-label-input:-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #FC4A56 !important;
+  opacity: 1;
+  margin: 0;
+}
+
+.company-profile-excess-page .text-red .input-text-label-input::-ms-input-placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #FC4A56 !important;
+  opacity: 1;
+  margin: 0;
+}
+
+.company-profile-excess-page .text-red .input-text-label-input::placeholder {
+  width: auto;
+  height: auto;
+  font-family: 'Poppins' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #FC4A56 !important;
+  opacity: 1;
+  margin: 0;
 }
 
 .company-profile-excess-page .content {

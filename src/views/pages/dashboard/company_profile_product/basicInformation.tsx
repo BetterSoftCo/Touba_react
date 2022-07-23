@@ -286,29 +286,29 @@ class BasicInformation extends BasicInformationController {
               <div className="p-2">
                 <div className="">
                   <ComponentMultiInput
-                    lableOne="Feature Title:"
-                    lableTwo="Feature Details:"
+                    lableOne="Specifications:"
+                    lableTwo="Amount:"
                     placeholderOne="Weight"
                     placeholderTwo="2800 KG"
                   />{" "}
                 </div>
                 <div className="mt-4">
                   <ComponentMultiInput
-                    lableOne="Feature Title:"
-                    lableTwo="Feature Details:"
+                    lableOne="Specifications:"
+                    lableTwo="Amount:"
                     placeholderOne="Weight"
                     placeholderTwo="2800 KG"
                   />{" "}
                 </div>
                 <div className="mt-4">
                   <ComponentMultiInput
-                    lableOne="Feature Title:"
-                    lableTwo="Feature Details:"
+                    lableOne="Specifications:"
+                    lableTwo="Amount:"
                     placeholderOne="Weight"
                     placeholderTwo="2800 KG"
                   />{" "}
                 </div>
-                <div className="mt-2">
+                <div className="mt-3 mb-5">
                   <ButtonAdd onClick={() => { }} />
                 </div>
               </div>
