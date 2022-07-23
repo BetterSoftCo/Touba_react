@@ -14,7 +14,7 @@ const ComponentSortandSearch = () => {
             <input className="input-search w-75" placeholder="Search in Orders" />
           </div>
         </div>
-        <div className="col-2 px-2">
+        <div className="col-2 px-2 select">
           <Select_component
             type="one"
             onSelect={() => {}}

@@ -1,23 +1,35 @@
 .line-chart {
   background: #ffffff;
   /* Shadow 1 */
-  
+  height: 76px !important;
   box-shadow: 0px 19px 27px rgba(0, 0, 0, 0.03);
   border-radius: 16px;
+
+  .select-component-button {
+    height: 46px !important;
+  }
+
+  .search-table {
+    height: 48px !important;
+  }
+
   .text-header-line {
     @include FontStyle(22px, 600, #3c557a);
   }
+
   .box-filter {
     background: #f3f4f6;
     border-radius: 75px;
     @include FontStyle(14px, 500, #6b798c);
   }
+
   .active {
     background: #ffffff;
     box-shadow: 0px 9px 11px rgba(107, 121, 140, 0.28);
     border-radius: 47px;
     padding: 3%;
   }
+
   .col-3 {
     cursor: pointer;
   }
