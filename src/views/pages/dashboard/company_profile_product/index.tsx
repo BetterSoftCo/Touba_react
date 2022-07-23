@@ -104,7 +104,7 @@ class CompanyProfileProduct extends CompanyProfileProductController {
 
   render() {
     return (
-      <div>
+      <div className="company-profile-product">
         <DashboardNav title="Products" />
         {this.state.status == 1 && this.starterPage()}
         {this.state.status == 2 && this.addProductOne()}

@@ -36,17 +36,16 @@ class BasicInformation extends BasicInformationController {
         </div>
         <div className="table-box s ">
           <div className="row border-bottom d-flex align-items-center ">
-            <div className="row d-flex -align-items-center ">
+            <div className="row d-flex align-items-center ">
               <div
                 onClick={() => this.setState({ active: 0 })}
-                className="col-2 text-center "
+                className="col-2 text-center mx-4"
               >
                 <div
-                  className={`item-nav py-4 ${
-                    this.state.active == 0 && "item-active"
-                  } `}
+                  className={`item-nav py-4 ${this.state.active == 0 && "item-active"
+                    } `}
                 >
-                  Products
+                  BASIC INFORMATION
                 </div>
               </div>
               <div
@@ -54,11 +53,10 @@ class BasicInformation extends BasicInformationController {
                 className="col-2 text-center "
               >
                 <div
-                  className={`item-nav py-4 ${
-                    this.state.active == 1 && "item-active"
-                  } `}
+                  className={`item-nav py-4 ${this.state.active == 1 && "item-active"
+                    } `}
                 >
-                  Attributes
+                  ATTRIBUTES
                 </div>
               </div>
               <div
@@ -66,11 +64,10 @@ class BasicInformation extends BasicInformationController {
                 className="col-2 text-center "
               >
                 <div
-                  className={`item-nav py-4 ${
-                    this.state.active == 2 && "item-active"
-                  } `}
+                  className={`item-nav py-4 ${this.state.active == 2 && "item-active"
+                    } `}
                 >
-                  Price & Delivery
+                  PRICE & DELIVERY
                 </div>
               </div>
               <div
@@ -78,11 +75,10 @@ class BasicInformation extends BasicInformationController {
                 className="col-2 text-center "
               >
                 <div
-                  className={`item-nav py-4 ${
-                    this.state.active == 3 && "item-active"
-                  } `}
+                  className={`item-nav py-4 ${this.state.active == 3 && "item-active"
+                    } `}
                 >
-                  Descriptions
+                  DESCRIPTION
                 </div>
               </div>
               <div
@@ -90,11 +86,10 @@ class BasicInformation extends BasicInformationController {
                 className="col-2 text-center "
               >
                 <div
-                  className={`item-nav py-4 ${
-                    this.state.active == 4 && "item-active"
-                  }`}
+                  className={`item-nav py-4 ${this.state.active == 4 && "item-active"
+                    }`}
                 >
-                  Specifications
+                  SPECIFICATIONS
                 </div>
               </div>
             </div>
@@ -136,13 +131,13 @@ class BasicInformation extends BasicInformationController {
                   </div>
                 </div>
                 <div className="row d-flex align-items-center">
-                  <div className="col-6 p-2">
+                  <div className="col-6 p-2 text-red">
                     <InputTextLabel
                       type="text"
                       placeholder="Milk Powder , Food Powders , Food raw materials"
                       title="Keywords"
                       value=""
-                      onChange={(e) => {console.log(e.target.value)}}
+                      onChange={(e) => { console.log(e.target.value) }}
                       showDropDown={false}
                     />
                   </div>
@@ -166,7 +161,7 @@ class BasicInformation extends BasicInformationController {
                 </div>
                 <div className="mt-3 mb-4 p-2 col-4">
                   <CardUploadImage
-                    handleGetImage={() => {}}
+                    handleGetImage={() => { }}
                     title="Product Images"
                   />
                 </div>
@@ -183,10 +178,7 @@ class BasicInformation extends BasicInformationController {
                   />{" "}
                 </div>
 
-                <div
-                  className="
-            mt-4"
-                >
+                <div className="mt-4">
                   <TextIconVerticalDashboard
                     icon={IconDanger}
                     title={"Hint text about the feature"}
@@ -206,26 +198,8 @@ class BasicInformation extends BasicInformationController {
                     title={"Hint text about the feature"}
                   />
                 </div>
-                <div className="mt-4">
-                  <ComponentMultiInput
-                    lableOne="Feature Title:"
-                    lableTwo="Feature Details:"
-                    placeholderOne="Weight"
-                    placeholderTwo="2800 KG"
-                  />{" "}
-                </div>
-                <div className="mt-3">
-                  <TextIconVerticalDashboard
-                    icon={IconDanger}
-                    title={"Hint text about the feature"}
-                  />
-                </div>
-
-                <div className="p-2">
-                  <ComponentColors />
-                </div>
-                <div className="p-2">
-                  <ButtonAdd onClick={() => {}} />
+                <div className="p-2 my-5">
+                  <ButtonAdd onClick={() => { }} />
                 </div>
               </div>
             )}
@@ -268,7 +242,7 @@ class BasicInformation extends BasicInformationController {
                 </div>
                 <div className="mt-4 mb-4">
                   {" "}
-                  <ButtonAdd onClick={() => {}} />
+                  <ButtonAdd onClick={() => { }} />
                 </div>
                 <Divider direction="vertical" />
                 <div className="mt-3">
@@ -283,7 +257,7 @@ class BasicInformation extends BasicInformationController {
                     placeholder="25"
                     title="Offer Amount(%)"
                     value=""
-                    onChange={() => {}}
+                    onChange={() => { }}
                     showDropDown={false}
                   />
                 </div>
@@ -329,7 +303,7 @@ class BasicInformation extends BasicInformationController {
                   />{" "}
                 </div>
                 <div className="mt-2">
-                  <ButtonAdd onClick={() => {}} />
+                  <ButtonAdd onClick={() => { }} />
                 </div>
               </div>
             )}

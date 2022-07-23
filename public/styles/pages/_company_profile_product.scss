@@ -1,0 +1,14 @@
+.company-profile-product {
+    .input-text-label {
+        .input-text-label-input {
+            @include Border(1px, $gray, 8px);
+        }
+    }
+    .text-red {
+        .input-text-label-input::placeholder {
+            @include FontStyle(16px, 500, $red);
+            opacity: 1;
+            margin: 0;
+        } 
+    }
+}
