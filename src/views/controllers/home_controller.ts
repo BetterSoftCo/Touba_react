@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { ProductDataSource } from "utilities_js/dist/cjs/data/product_datasource";
 import { CHART } from '../components/chart';
 
 interface IProps {
@@ -14,6 +15,10 @@ interface IState {
 }
 
 export class HomeController extends Component<IProps, IState> {
+
+    // productDataSource: ProductDataSource = new ProductDataSource (
+    //     "https://api.sinamn75.com/api/"
+    // );
 
     state = {
         more: false,
