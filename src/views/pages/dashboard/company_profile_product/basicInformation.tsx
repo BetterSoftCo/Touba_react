@@ -26,6 +26,7 @@ import { Divider } from "../../../components/divider";
 import UploadImage from "../../../components/upload_image";
 import { CardUploadImage } from "../../../components/card_upload_image";
 import BasicInformationController from "../../../controllers/basic_information_controller";
+import Amount_select from "../../../components/amount_select";
 
 class BasicInformation extends BasicInformationController {
   render(): React.ReactNode {
@@ -205,6 +206,11 @@ class BasicInformation extends BasicInformationController {
             )}
             {this.state.active == 2 && (
               <div className="p-3">
+                <div className="mb-4">
+                  <Amount_select getActive={function (id: number): void {
+                    throw new Error("Function not implemented.");
+                  } }/>
+                </div>
                 <div className="mt-2">
                   <ComponentColorSelect />
                 </div>
